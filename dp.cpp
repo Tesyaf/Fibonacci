@@ -5,14 +5,14 @@ using namespace std;
 using namespace std::chrono;
 
 long long int fib(int num){
-    vector<long long int> fibo(num + 1);
-    fibo[0] = 0;
-    fibo[1] = 1;
+    vector<long long int> arr(num + 1);
+    arr[0] = 0;
+    arr[1] = 1;
 
     for (int i = 2; i <= num; i++){
-        fibo[i] = fibo[i-1] + fibo[i-2];
+        arr[i] = arr[i-1] + arr[i-2];
     }
-    return fibo[num];
+    return arr[num];
 }
 
 int main(){
